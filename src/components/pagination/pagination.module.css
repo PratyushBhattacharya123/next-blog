@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .button {
+  width: 100px;
+  border: none;
+  padding: 16px;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=pagination.module.css.map */

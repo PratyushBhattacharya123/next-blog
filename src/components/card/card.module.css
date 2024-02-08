@@ -1,0 +1,41 @@
+.container {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.container .imageContainer {
+  flex: 1;
+  position: relative;
+  height: 350px;
+}
+.container .imageContainer .image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .textContainer .detail .date {
+  color: gray;
+}
+.container .textContainer .detail .category {
+  color: crimson;
+  font-weight: 500;
+}
+.container .textContainer .title {
+  font-size: 32px;
+}
+.container .textContainer .desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--softTextColor);
+}
+.container .textContainer .link {
+  border-bottom: 1px solid crimson;
+  width: -moz-max-content;
+  width: max-content;
+}/*# sourceMappingURL=card.module.css.map */

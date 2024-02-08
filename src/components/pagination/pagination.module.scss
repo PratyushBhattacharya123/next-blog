@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    width: 100px;
+    border: none;
+    outline: none;
+    padding: 16px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:disabled {
+      background-color: rgba(220, 20, 60, 0.5);
+      cursor: not-allowed;
+    }
+  }
+}

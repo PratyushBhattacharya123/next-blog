@@ -1,0 +1,138 @@
+.container {
+  overflow-x: hidden;
+  .select{
+    padding: 10px 15px;
+    margin-left: 80px;
+    width: max-content;
+    text-transform: capitalize;
+    border: 1px solid var(--textColor);
+    border-radius: 7px;
+  }
+  
+  .input {
+    padding: 50px;
+    font-size: 64px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--textColor);
+    margin-left: 18px;
+
+    &::placeholder {
+      color: #b3b3b1;
+    }
+  }
+
+  .editor {
+    display: flex;
+    gap: 20px;
+    height: 700px;
+    position: relative;
+
+    .button {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 1px solid var(--softTextColor);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-top: -40px;
+      flex-shrink: 0;
+    }
+
+    .add {
+      display: flex;
+      gap: 20px;
+      background-color: var(--bg);
+      position: absolute;
+      z-index: 999;
+      width: max-content;
+      left: 50px;
+      margin-top: -40px;
+      margin-left: 6px;
+
+      .addButton {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid var(--textColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-color: #1a8917;
+      }
+    }
+
+    .textArea {
+      width: 100%;
+    }
+  }
+
+  .publish {
+    position: absolute;
+    top: 125px;
+    right: 80px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a8917;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    .select {
+      transform: translateX(300%);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .select {
+      transform: translateX(200%);
+    }
+    .input {
+      font-size: 56px; 
+    }
+
+    .publish {
+      right: 30px;
+      top: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    .select {
+      transform: translateX(100%);
+      padding: 7px 10px;
+    }
+    .input {
+      font-size: 48px; 
+    }
+
+    .publish {
+      padding: 8px 15px;
+      font-size: 12px;
+      right: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    .select {
+      transform: translateX(50%);  
+    }
+  }
+}
